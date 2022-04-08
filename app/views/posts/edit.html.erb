@@ -1,0 +1,13 @@
+<h1>編集ページ</h1>
+<%= form_with model:@post, url:"/posts/#{@post.id}", local:true do |f| %>
+<h4>宿泊施設</h4>
+<%= f.text_field :hotel %>
+<h4>場所</h4>
+<%= f.text_field :place %>
+<h4>説明</h4>
+<%= f.text_area :explantion %>
+<h4>値段</h4>
+<%= f.text_field :price %><br>
+<%= f.submit '保存する', class: "btn btn-success" %><br>
+<%= link_to '投稿詳細ページへ', post_path(@post), class: "btn btn-dark mt-3" %>
+<% end %>

@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "bootstrap/scss/bootstrap";
+
+ header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+}
+
+header div {
+  margin-left: 30px;
+  line-height: 30px;
+}
